@@ -26,13 +26,15 @@ int main(void)
 				else
 					num2ones = 0;
 
-				for (;num2ones <= 9; num2ones++)
+				for (; num2ones <= 9; num2ones++)
 				{
 					putchar(num1tens + '0');
 					putchar(num1ones + '0');
+					putchar(' ');
 					putchar(num2tens + '0');
 					putchar(num2ones + '0');
-					if(!(num1tens == 9 && num1ones == 8 && num2tens == 9 && num2ones == 9 ))
+
+					if (!(num1tens == 9 && num1ones == 8 && num2tens == 9 && num2ones == 9))
 					{
 						putchar(',');
 						putchar(' ');
