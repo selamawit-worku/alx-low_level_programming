@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * islower - checks lower case char
+ * _islower - checks lower case char
+ *
+ *@c: the character in ASCII code
  *
  * Return: 1 -if car is lowercase 0 otherwise
  */
