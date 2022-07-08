@@ -2,7 +2,9 @@
 
 /**
  * main - entry point
+ *
  * @void: no argument 
+ * 
  * Return: 0 for success
  */
 
@@ -10,7 +12,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i < 101; i++)
+	for (i = 1; i < 100; i++)
 		if (i % 15 == 0)
 		{
 			printf("FizzBuzz ");
@@ -27,6 +29,7 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
