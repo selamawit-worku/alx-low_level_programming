@@ -9,8 +9,9 @@
 
 int _atoi(char *s)
 {
-	int res = 0;
+	char *res;
 	int i;
+	int j = 0;
 	int numberDetected = 0;
 	int signDetermine = 0;
 
@@ -20,13 +21,15 @@ int _atoi(char *s)
 		if (numberDetected == 1 && (s[i] < 48 || s[i] > 57))
 			break;
 
-		if ((s[i] >= 48 && s[i] <= 57))
-		{
+		if (numberDetected == 0 && s[i] >= 48 && s[i] <= 57){
 			numberDetected = 1;
-			res = res * 10 + s[i] - '0';
+			if (signDetermine % 2)
+				res[j++] = '-';
 		}
+
+		if (s[i] >= 48 && s[i] <= 57)
+			res[j++] = s[i];
 	}
-	if (signDetermine % 2)
-		res *= -1;
-	return res;
+
+	return &res;
 }
