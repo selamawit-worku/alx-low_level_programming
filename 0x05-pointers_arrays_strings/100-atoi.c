@@ -23,10 +23,18 @@ int _atoi(char *s)
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			if(numberDetected == 0)
+			if (numberDetected == 0)
 				numberDetected = 1;
+			if (res > INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7))
+			{
+				if (sign == 1)
+					return INT_MAX;
+				else
+					return INT_MIN;
+			}
+
 			res *= 10;
-			res -= (s[i] - '0');
+			res += (s[i] - '0');
 		}
 		i++;
 	}
