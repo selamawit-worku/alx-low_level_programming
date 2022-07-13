@@ -15,7 +15,7 @@ int main(void)
 	char p[58];
 
 	srand(time(NULL));
-	while(s != 2772)
+	while(l != 2772)
 	{
 		i = k = l =0;
 
