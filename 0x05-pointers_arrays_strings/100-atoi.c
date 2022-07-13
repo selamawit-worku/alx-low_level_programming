@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	int res;
+	int res = 0;
 	int i;
 	int sign = 1;
 	int numberDetected = 0;
@@ -26,7 +26,7 @@ int _atoi(char *s)
 		{
 			if (numberDetected == 0)
 				numberDetected = 1;
-			if (res > INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7))
+			if (res > INT_MAX / 10 || (res == INT_MAX / 10 && str[i] - '0' > 7))
 			{
 				if (sign == 1)
 					return INT_MAX;
