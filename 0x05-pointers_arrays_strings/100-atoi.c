@@ -15,7 +15,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int numberDetected = 0;
 
-	for (i = 0; s[i] != '\0'; ++i)
+	for (i = 0; s[i] != '\0';)
 	{
 		if (numberDetected == 0 && s[i] == '-')
 			sign *= -1;
@@ -34,7 +34,7 @@ int _atoi(char *s)
 					return (INT_MIN);
 			}
 
-			res = res * 10 + s[i] - '0';
+			res = res * 10 + s[i++] - '0';
 		}
 	}
 
