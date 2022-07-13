@@ -3,7 +3,7 @@
 
 /**
  * _strlen - length of string
- * @s: string value 
+ * @s: string value
  * Return: int
  */
 
