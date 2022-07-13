@@ -31,5 +31,5 @@ int _atoi(char *s)
 			res[j++] = s[i];
 	}
 
-	return &res;
+	return (res);
 }
