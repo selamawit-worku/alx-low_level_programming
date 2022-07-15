@@ -24,7 +24,7 @@ char *cap_string(char *n)
 	{
 		for (j = 0; sepa[j] != '\0'; j++)
 		{
-			if ((n[i] == sepa[j]) && (n[i + 1] >= 'a' && n[i + 1] <= 'z'))
+			if ((n[i] == sepa[j] && n[i + 1] != '\0') && (n[i + 1] >= 'a' && n[i + 1] <= 'z'))
 			{
 				n[i + 1] = n[i + 1] - 32;
 				break;
