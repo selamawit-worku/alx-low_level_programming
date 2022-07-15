@@ -11,7 +11,9 @@ char *cap_string(char *n)
 {
 	int i;
 	int j;
-	char sepa[] = " \t\n,;.!?\"(){}";
+	char *sepa;
+       
+	sepa = " \t\n,;.!?\"(){}";
 	
 	if (n[0] >= 'a' && n[0] <= 'z')
 	{
