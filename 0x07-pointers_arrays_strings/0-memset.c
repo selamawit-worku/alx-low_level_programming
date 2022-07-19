@@ -1,5 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * simple_print_buffer-prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
+ *
+ * Return: Nothing.
+ */
+void simple_print_buffer(char *buffer, unsigned int size)
 {          
 	 unsigned int i;
 	 
@@ -19,6 +28,12 @@
 	 }
          printf("\n");
 }
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     char buffer[98]= {0x00};
