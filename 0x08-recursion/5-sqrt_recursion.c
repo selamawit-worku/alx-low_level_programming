@@ -18,7 +18,7 @@ int  recursion_sqrt(int s, int e, int n)
 		if (m * m == n)
 			return (m);
 		if (m * m > n)
-			retrun (recursion_sqrt(s, m - 1, n));
+			return (recursion_sqrt(s, m - 1, n));
 		if (m * m < n)
 			return (recursion_sqrt(m + 1, e, n));
 	}
