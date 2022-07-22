@@ -26,7 +26,7 @@ int rec_sqrt(int n)
 {
 	if (n == 1)
 		return (1);
-	return (sqrtrec(n /2, n));
+	return (sqrtrec(n / 2, n));
 }
 
 /**
