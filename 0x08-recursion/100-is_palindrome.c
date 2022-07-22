@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 
 /**
  * _str_len_rec - str
