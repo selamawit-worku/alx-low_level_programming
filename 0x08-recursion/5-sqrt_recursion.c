@@ -2,7 +2,7 @@
 
 /**
  * recursion_sqrt - return sqrt
- * @s: start 
+ * @s: start
  * @e: end
  * @n: num
  * Return: int
@@ -10,7 +10,7 @@
 
 int  recursion_sqrt(int s, int e, int n)
 {
-	int m;
+	long m;
 
 	if (e >= s)
 	{
@@ -36,6 +36,6 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	if (n == 0 || n == 1)
-	       return (n);
+		return (n);
 	return (recursion_sqrt(2, n, n));
 }
