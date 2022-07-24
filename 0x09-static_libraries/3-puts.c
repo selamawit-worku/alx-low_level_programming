@@ -1,19 +1,18 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * _puts - prints a string to stdout
- * @str: string value
+ * @s: string value
  * Return: void
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
 	int l = 0;
 
-	while (*(str + l) != '\0')
+	while (*(s + l) != '\0')
 	{
-		_putchar(str[l]);
+		_putchar(s[l]);
 		l++;
 	}
 
