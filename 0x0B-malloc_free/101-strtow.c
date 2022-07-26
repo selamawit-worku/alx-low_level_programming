@@ -14,7 +14,7 @@ int wCounterRec(char *str, int i)
 		return (0);
 	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
 		return (1 + wCounterRec(str, i + 1));
-	return(wCounterRec(str, i + 1));
+	return (wCounterRec(str, i + 1));
 }
 /**
  * wcount - count words
@@ -48,7 +48,7 @@ char **strtow(char *str)
 	result = malloc(sizeof(char *) * (w + 1));
 	if (result == NULL)
 		return (NULL);
-	for(i = 0; i < w && *str != '\0';)
+	for (i = 0; i < w && *str != '\0';)
 	{
 		if (*str != ' ')
 		{
