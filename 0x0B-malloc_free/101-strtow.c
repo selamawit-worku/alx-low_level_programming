@@ -45,7 +45,7 @@ char **strtow(char *str)
 	w = wcount(str);
 	if (w < 1)
 		return (NULL);
-	result = malloc(sizeof(char *) * (w + 1));
+	result = malloc(sizeof(char *) * w + sizeof(char));
 	if (result == NULL)
 		return (NULL);
 	for (i = 0; i < w && *str != '\0';)
