@@ -58,7 +58,7 @@ char **strtow(char *str)
 			if (result[i] == NULL)
 			{
 				while (--i >= 0)
-					free(result[--i]);
+					free(result[i]);
 				free(result);
 				return (NULL);
 			}
