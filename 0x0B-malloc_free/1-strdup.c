@@ -3,7 +3,7 @@
 
 /**
  * _strdup - return pointer to mem loca
- * @str: string 
+ * @str: string
  * Return: pointer to string
  */
 
