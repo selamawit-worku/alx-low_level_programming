@@ -4,7 +4,7 @@
 /**
  * argstostr - concatnates all args to a str
  * @ac: int
- * @ac: str
+ * @av: str
  * Return: str
  */
 
