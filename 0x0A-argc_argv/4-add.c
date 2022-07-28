@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum, num = 0;
 
-	for (i = 0, sum = 0; i < argc; i++)
+	for (i = 1, sum = 0; i < argc; i++)
 	{
 		num = checker(argv[i]);
 		if (num == -1)
