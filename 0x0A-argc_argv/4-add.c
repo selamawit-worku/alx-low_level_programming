@@ -32,8 +32,9 @@ int checker(char *a)
 
 int main(int argc, char *argv[])
 {
-	int i, sum, num = 0;
+	int i, sum, num;
 
+	num = 0;
 	for (i = 1, sum = 0; i < argc; i++)
 	{
 		num = checker(argv[i]);
