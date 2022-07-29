@@ -8,7 +8,7 @@
  * Return: pointer to newly created array
  */
 
-int *array_integer(int min, int max)
+int *array_range(int min, int max)
 {
 	int *result;
 	int i, size;
